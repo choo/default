@@ -1,0 +1,18 @@
+:root {
+  --mdc-theme-primary: #444444;
+  --mdc-theme-secondary: #444444;
+  --mdc-theme-on-primary: #333333;
+  --mdc-theme-on-secondary: #ff0000;
+}
+
+/**
+ * since the following color is hardcoded in preact-material-components,
+ * change it to use --mdc-theme-primary variable.
+ * cf.) [mdc-floating-label does not use theme colour](https://github.com/material-components/material-components-web/issues/2718)
+ */
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: var(--mdc-theme-primary) !important;
+}
+.mdc-list-item--activated {
+  color: var(--mdc-theme-primary) !important;
+}
