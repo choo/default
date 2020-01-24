@@ -10,7 +10,8 @@
 
 ``` bash
 $ npm install -g preact-cli
-$ preact create default my-project
+$ preact create choo/default my-project
+$ # means "preact create <template-name> <project-name>"
 $ cd my-project
 $ npm install
 $ npm run dev
